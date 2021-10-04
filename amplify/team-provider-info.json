@@ -1,0 +1,20 @@
+{
+  "scdev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-snapchatclone-scdev-124041-authRole",
+      "UnauthRoleArn": "arn:aws:iam::913956916739:role/amplify-snapchatclone-scdev-124041-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::913956916739:role/amplify-snapchatclone-scdev-124041-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-snapchatclone-scdev-124041-deployment",
+      "UnauthRoleName": "amplify-snapchatclone-scdev-124041-unauthRole",
+      "StackName": "amplify-snapchatclone-scdev-124041",
+      "StackId": "arn:aws:cloudformation:us-east-1:913956916739:stack/amplify-snapchatclone-scdev-124041/0cbd6f90-e884-11ea-a72d-0e9711d18427",
+      "AmplifyAppId": "d18scvfnsmy6k6"
+    },
+    "categories": {
+      "auth": {
+        "snapchatclonea445b135": {}
+      }
+    }
+  }
+}

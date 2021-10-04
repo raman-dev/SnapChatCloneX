@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "auth": {
+      "snapchatclonea445b135": [
+        "read"
+      ]
+    },
+    "api": {
+      "snapchatclone60": [
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "storage": {
+      "FriendRequest:@model(appsync)": [
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

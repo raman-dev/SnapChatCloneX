@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "auth": {
+      "snapchatclonea445b135": [
+        "read"
+      ]
+    },
+    "api": {
+      "snapchatclone60": [
+        "create",
+        "update"
+      ]
+    },
+    "storage": {
+      "User:@model(appsync)": [
+        "create",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

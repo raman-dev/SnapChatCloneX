@@ -1,0 +1,215 @@
+# this is an auto generated file. This will be overwritten
+query OnDeleteFriendRequest($id: ID!) {
+  onDeleteFriendRequest(id: $id)
+}
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userId
+      username
+      conversations {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetDirectMessageEditor($id: ID!) {
+  getDirectMessageEditor(id: $id) {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+query ListDirectMessageEditors(
+  $filter: ModelDirectMessageEditorFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listDirectMessageEditors(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      conversationId
+      userId
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetDirectMessageChat($id: ID!) {
+  getDirectMessageChat(id: $id) {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListDirectMessageChats(
+  $filter: ModelDirectMessageChatFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listDirectMessageChats(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      conversationId
+      messages {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetMessage($id: ID!) {
+  getMessage(id: $id) {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+query ListMessages(
+  $filter: ModelMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      authorId
+      recipientId
+      conversationId
+      content
+      createdAt
+      isSnap
+      bucket
+      region
+      key
+      unread
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetFriendRequest($id: ID!) {
+  getFriendRequest(id: $id) {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+query ListFriendRequests(
+  $filter: ModelFriendRequestFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listFriendRequests(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      authorId
+      authorUsername
+      recipientId
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetFriendRequestResponse($id: ID!) {
+  getFriendRequestResponse(id: $id) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+query ListFriendRequestResponses(
+  $filter: ModelFriendRequestResponseFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listFriendRequestResponses(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      requestSenderId
+      accepted
+      conversationId
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

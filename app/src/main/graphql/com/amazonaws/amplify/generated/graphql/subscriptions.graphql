@@ -1,0 +1,304 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMessageForRecipient($recipientId: ID!) {
+  onCreateMessageForRecipient(recipientId: $recipientId) {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+subscription OnCreateFriendRequestForRecipient($recipientId: ID!) {
+  onCreateFriendRequestForRecipient(recipientId: $recipientId) {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateFriendRequestResponseForSelf($requestSenderId: ID!) {
+  onCreateFriendRequestResponseForSelf(requestSenderId: $requestSenderId) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateDirectMessageEditor {
+  onCreateDirectMessageEditor {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateDirectMessageEditor {
+  onUpdateDirectMessageEditor {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteDirectMessageEditor {
+  onDeleteDirectMessageEditor {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateDirectMessageChat {
+  onCreateDirectMessageChat {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateDirectMessageChat {
+  onUpdateDirectMessageChat {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteDirectMessageChat {
+  onDeleteDirectMessageChat {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateMessage {
+  onCreateMessage {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+subscription OnUpdateMessage {
+  onUpdateMessage {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+subscription OnDeleteMessage {
+  onDeleteMessage {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+subscription OnCreateFriendRequest {
+  onCreateFriendRequest {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateFriendRequest {
+  onUpdateFriendRequest {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteFriendRequest {
+  onDeleteFriendRequest {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateFriendRequestResponse {
+  onCreateFriendRequestResponse {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateFriendRequestResponse {
+  onUpdateFriendRequestResponse {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteFriendRequestResponse {
+  onDeleteFriendRequestResponse {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}

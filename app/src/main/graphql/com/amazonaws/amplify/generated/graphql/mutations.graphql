@@ -1,0 +1,342 @@
+# this is an auto generated file. This will be overwritten
+mutation OnAcceptFriendRequest($requestSenderId: ID!) {
+  onAcceptFriendRequest(requestSenderId: $requestSenderId) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+mutation OnDeclineFriendRequest($requestSenderId: ID!) {
+  onDeclineFriendRequest(requestSenderId: $requestSenderId) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    userId
+    username
+    conversations {
+      items {
+        id
+        conversationId
+        userId
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateDirectMessageEditor(
+  $input: CreateDirectMessageEditorInput!
+  $condition: ModelDirectMessageEditorConditionInput
+) {
+  createDirectMessageEditor(input: $input, condition: $condition) {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateDirectMessageEditor(
+  $input: UpdateDirectMessageEditorInput!
+  $condition: ModelDirectMessageEditorConditionInput
+) {
+  updateDirectMessageEditor(input: $input, condition: $condition) {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteDirectMessageEditor(
+  $input: DeleteDirectMessageEditorInput!
+  $condition: ModelDirectMessageEditorConditionInput
+) {
+  deleteDirectMessageEditor(input: $input, condition: $condition) {
+    id
+    conversationId
+    userId
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateDirectMessageChat(
+  $input: CreateDirectMessageChatInput!
+  $condition: ModelDirectMessageChatConditionInput
+) {
+  createDirectMessageChat(input: $input, condition: $condition) {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateDirectMessageChat(
+  $input: UpdateDirectMessageChatInput!
+  $condition: ModelDirectMessageChatConditionInput
+) {
+  updateDirectMessageChat(input: $input, condition: $condition) {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteDirectMessageChat(
+  $input: DeleteDirectMessageChatInput!
+  $condition: ModelDirectMessageChatConditionInput
+) {
+  deleteDirectMessageChat(input: $input, condition: $condition) {
+    id
+    conversationId
+    messages {
+      items {
+        id
+        authorId
+        recipientId
+        conversationId
+        content
+        createdAt
+        isSnap
+        bucket
+        region
+        key
+        unread
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateMessage(
+  $input: CreateMessageInput!
+  $condition: ModelMessageConditionInput
+) {
+  createMessage(input: $input, condition: $condition) {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+mutation UpdateMessage(
+  $input: UpdateMessageInput!
+  $condition: ModelMessageConditionInput
+) {
+  updateMessage(input: $input, condition: $condition) {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+mutation DeleteMessage(
+  $input: DeleteMessageInput!
+  $condition: ModelMessageConditionInput
+) {
+  deleteMessage(input: $input, condition: $condition) {
+    id
+    authorId
+    recipientId
+    conversationId
+    content
+    createdAt
+    isSnap
+    bucket
+    region
+    key
+    unread
+    updatedAt
+  }
+}
+mutation CreateFriendRequest(
+  $input: CreateFriendRequestInput!
+  $condition: ModelFriendRequestConditionInput
+) {
+  createFriendRequest(input: $input, condition: $condition) {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateFriendRequest(
+  $input: UpdateFriendRequestInput!
+  $condition: ModelFriendRequestConditionInput
+) {
+  updateFriendRequest(input: $input, condition: $condition) {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteFriendRequest(
+  $input: DeleteFriendRequestInput!
+  $condition: ModelFriendRequestConditionInput
+) {
+  deleteFriendRequest(input: $input, condition: $condition) {
+    id
+    authorId
+    authorUsername
+    recipientId
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateFriendRequestResponse(
+  $input: CreateFriendRequestResponseInput!
+  $condition: ModelFriendRequestResponseConditionInput
+) {
+  createFriendRequestResponse(input: $input, condition: $condition) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateFriendRequestResponse(
+  $input: UpdateFriendRequestResponseInput!
+  $condition: ModelFriendRequestResponseConditionInput
+) {
+  updateFriendRequestResponse(input: $input, condition: $condition) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteFriendRequestResponse(
+  $input: DeleteFriendRequestResponseInput!
+  $condition: ModelFriendRequestResponseConditionInput
+) {
+  deleteFriendRequestResponse(input: $input, condition: $condition) {
+    id
+    requestSenderId
+    accepted
+    conversationId
+    createdAt
+    updatedAt
+  }
+}

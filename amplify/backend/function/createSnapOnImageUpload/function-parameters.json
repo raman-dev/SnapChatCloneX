@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "auth": {
+      "snapchatclonea445b135": [
+        "read"
+      ]
+    },
+    "api": {
+      "snapchatclone60": [
+        "create",
+        "update"
+      ]
+    },
+    "storage": {
+      "SnapChatCloneS3": [
+        "read"
+      ],
+      "Snap:@model(appsync)": [
+        "create",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
